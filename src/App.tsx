@@ -19,21 +19,6 @@ function App() {
           placeholder="请输入用户名搜索"
           style={{ width: '100%' }}
         />
-
-        <div style={{ marginTop: '20px' }}>
-          <h4>已选用户:</h4>
-          {selectedUsers.length > 0 ? (
-            <ul>
-              {selectedUsers.map(user => (
-                <li key={user.UserName}>
-                  {user.UserName} ({user.UserAge}岁)
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p>暂无选择</p>
-          )}
-        </div>
       </Card>
     </div>
   );
